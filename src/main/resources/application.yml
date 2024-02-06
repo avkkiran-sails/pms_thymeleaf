@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: PMS-Service
+  jpa:
+    database: POSTGRESQL
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: ${db.schema}
+
+db:
+  schema: ${DB_SCHEMA}
+
+app:
+  name: PMS-Service
+
+server:
+  servlet:
+    context-path: /api/pms
